@@ -15,6 +15,7 @@ function App() {
       <ImageSlider></ImageSlider>
       <MenuBellySlider></MenuBellySlider>
       <PremiumProducts></PremiumProducts>
+      <h1>Under process</h1>
       <Footer></Footer>
     </>
   )
