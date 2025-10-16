@@ -1,118 +1,152 @@
+/* ---------------- Navbar ---------------- */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
+  padding: 0.5rem 1rem;
   background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: relative;
+  font-family: Arial, sans-serif;
 }
 
+/* Left Section */
 .nav-left {
   display: flex;
   align-items: center;
+  gap: 1rem;
+  position: relative;
 }
 
 .logo {
   font-size: 1.5rem;
-  margin-right: 15px;
 }
 
 .location {
-  font-weight: 500;
+  position: relative;
   cursor: pointer;
 }
 
-.nav-links {
-  display: flex;
-  list-style: none;
-  gap: 25px;
-}
-
-.nav-links li {
-  position: relative;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav-links a:hover {
-  color: #ff9800;
-}
-
-.nav-right {
+.location-text {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 0.25rem;
 }
 
-.cart-icon {
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+.arrow {
+  font-size: 0.7rem;
 }
 
-/* Dropdown */
+/* Dropdown Menu (common style) */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   background: #fff;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  z-index: 10;
+  border: 1px solid #ddd;
+  min-width: 150px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+  padding: 0.5rem 0;
+  border-radius: 5px;
 }
 
 .dropdown-menu li {
-  width: 150px;
+  list-style: none;
 }
 
-.dropdown-menu a {
+.dropdown-menu li a,
+.dropdown-menu li label {
   display: block;
-  padding: 10px 15px;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
   color: #333;
-  font-weight: 500;
+  cursor: pointer;
 }
 
-.dropdown-menu a:hover {
-  background-color: #ff9800;
-  color: #fff;
-  transition: 0.3s;
+.dropdown-menu li a:hover,
+.dropdown-menu li label:hover {
+  background-color: #f0f0f0;
+}
+
+/* Checkbox inside city dropdown */
+.dropdown-menu li input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+/* Nav Brand */
+.nav-brand .brand-link {
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-brand .brand-link span {
+  font-weight: normal;
+}
+
+/* Center Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem;
+}
+
+.nav-links li a:hover {
+  color: #007bff;
+}
+
+/* Dropdown inside nav-links */
+.nav-links .dropdown {
+  position: relative;
+}
+
+/* Right Section */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 /* Hamburger */
 .hamburger {
-  display: none;
+  display: none; /* hide by default, show on mobile */
   flex-direction: column;
-  gap: 5px;
+  gap: 4px;
   cursor: pointer;
 }
 
 .hamburger span {
-  display: block;
   width: 25px;
   height: 3px;
-  background: #333;
+  background-color: #333;
 }
 
-/* Responsive */
+/* Responsive: mobile */
 @media (max-width: 768px) {
   .nav-links {
     position: absolute;
-    top: 65px;
-    right: 0;
+    top: 100%;
+    left: 0;
     flex-direction: column;
+    width: 100%;
     background: #fff;
-    width: 200px;
-    padding: 20px;
-    gap: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-    border-radius: 8px;
     display: none;
+    border-top: 1px solid #ddd;
   }
 
   .nav-links.open {
@@ -123,9 +157,8 @@
     display: flex;
   }
 
-  .dropdown-menu {
-    position: static;
-    box-shadow: none;
-    border-radius: 0;
+  .nav-left,
+  .nav-brand {
+    flex: 1;
   }
 }
