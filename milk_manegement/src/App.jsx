@@ -1,0 +1,18 @@
+import { useState } from 'react'
+import Navbar from './Components/Navbar';
+import ImageSlider from './Components/imgslider';
+import MenuBellySlider from './Components/MenuBellySlider';
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Navbar></Navbar>
+      <ImageSlider></ImageSlider>
+      <MenuBellySlider></MenuBellySlider>
+    </>
+  )
+}
+
+export default App
