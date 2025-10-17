@@ -86,3 +86,13 @@
   background-color: #1e3a8a;
   color: #fff;
 }
+
+
+
+
+@media (min-width: 768px) {
+  .products-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 120px;
+  }
+}

@@ -3,6 +3,7 @@ import "../StyleSection/Footer.css"; // Make sure the path is correct
 
 const Footer = ({ setCurrentPage }) => {
   return (
+    <center>
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-grid">
@@ -14,9 +15,10 @@ const Footer = ({ setCurrentPage }) => {
             </div>
             <div className="footer-address">
               <p className="footer-title">Corporate Office:</p>
-              <p>B2, Vikas Chamber, D Block,<br/>Central Market, Prashant Vihar,<br/>Rohini, New Delhi - 110085</p>
-              <p className="footer-title mt-4">Manufacturing & Packaging Address:</p>
-              <p>Khewat No.- 1165, Mini Khata No.- 1237,<br/>Village Khewra, Rai, Sonipat,<br/>Haryana - 131001</p>
+              H-109, H Block, Sector 63, Noida, Uttar Pradesh 201301
+              <p>H-109, H Block, Sector 63,<br/>sahaswan budaun,<br/>Noida, Uttar Pradesh 201301</p>
+              {/* <p className="footer-title mt-4">Manufacturing & Packaging Address:</p>
+              <p>Khewat No.- 1165, Mini Khata No.- 1237,<br/>Village Khewra, Rai, Sonipat,<br/>Haryana - 131001</p> */}
             </div>
           </div>
 
@@ -71,17 +73,22 @@ const Footer = ({ setCurrentPage }) => {
 
             <h4>Contact us</h4>
             <div className="footer-contact">
-              <p>care@whitecraft.com</p>
-              <p>+91-8010342342</p>
+              <p>furqanullah3677@gmail.com</p>
+              <p>+91 99273 35197</p>
             </div>
           </div>
         </div>
 
         <div className="footer-bottom">
           <p>&copy; 2025, by whitecraft.com | All rights reserved | WHITE CRAFT Dairy Farms Private Limited</p>
+          <p className="footer-owner">Owned & Managed by <strong>Mr.Furqan ullah khan </strong></p>
+
+
         </div>
       </div>
+      
     </footer>
+    </center>
   );
 };
 
