@@ -16,9 +16,9 @@ const Footer = ({ setCurrentPage }) => {
             <div className="footer-address">
               <p className="footer-title">Corporate Office:</p>
              
-              <p>sahaswan budaun,</p>
+              <p>H Block, Sector 63, Noida, Uttar Pradesh 201301,,</p>
                <p className="footer-title mt-4">Manufacturing & Packaging Address:</p>
-              <p>H-109, H Block, Sector 63, Noida, Uttar Pradesh 201301,<br/></p> 
+              <p>Nawada Sahaswan Budaun,<br/></p> 
             </div>
           </div>
 
