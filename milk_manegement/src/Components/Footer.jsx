@@ -15,10 +15,10 @@ const Footer = ({ setCurrentPage }) => {
             </div>
             <div className="footer-address">
               <p className="footer-title">Corporate Office:</p>
-              H-109, H Block, Sector 63, Noida, Uttar Pradesh 201301
-              <p>H-109, H Block, Sector 63,<br/>sahaswan budaun,<br/>Noida, Uttar Pradesh 201301</p>
-              {/* <p className="footer-title mt-4">Manufacturing & Packaging Address:</p>
-              <p>Khewat No.- 1165, Mini Khata No.- 1237,<br/>Village Khewra, Rai, Sonipat,<br/>Haryana - 131001</p> */}
+             
+              <p>sahaswan budaun,</p>
+               <p className="footer-title mt-4">Manufacturing & Packaging Address:</p>
+              <p>H-109, H Block, Sector 63, Noida, Uttar Pradesh 201301,<br/></p> 
             </div>
           </div>
 
