@@ -8,7 +8,7 @@ export const products = [
     name: "Fresh Cow Milk",
     category: "Milk",
     brand: "Amul",
-    price: "$2.50",
+    price: "₹000",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ export const products = [
     name: "Organic Milk",
     category: "Milk",
     brand: "Mother Dairy",
-    price: "$3.00",
+    price: "₹000",
   },
 
   // Ghee
@@ -26,7 +26,7 @@ export const products = [
     name: "Pure Cow Ghee",
     category: "Ghee",
     brand: "Amul",
-    price: "$12.00",
+    price: "₹1000",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ export const products = [
     name: "Organic Ghee",
     category: "Ghee",
     brand: "Patanjali",
-    price: "$10.50",
+    price: "₹1000",
   },
 
   // Curd
@@ -44,7 +44,7 @@ export const products = [
     name: "Fresh Curd",
     category: "Curd",
     brand: "Mother Dairy",
-    price: "$4.00",
+    price: "₹000",
   },
   {
     id: 6,
@@ -52,7 +52,7 @@ export const products = [
     name: "Probiotic Curd",
     category: "Curd",
     brand: "Amul",
-    price: "$4.50",
+    price: "₹000",
   },
 
   // Sweet
@@ -62,7 +62,7 @@ export const products = [
     name: "Chocolate Burfi",
     category: "Sweet",
     brand: "Haldiram",
-    price: "$5.00",
+    price: "₹000",
   },
   {
     id: 8,
@@ -70,7 +70,7 @@ export const products = [
     name: "Kaju Katli",
     category: "Sweet",
     brand: "Gopal Sweets",
-    price: "$6.50",
+    price: "₹000",
   },
 
   // Butter
@@ -80,7 +80,7 @@ export const products = [
     name: "Salted Butter",
     category: "Butter",
     brand: "Amul",
-    price: "$3.50",
+    price: "₹000",
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ export const products = [
     name: "Unsalted Butter",
     category: "Butter",
     brand: "Mother Dairy",
-    price: "$3.80",
+    price: "₹000",
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const products = [
     name: "Salted Butter",
     category: "Butter",
     brand: "Amul",
-    price: "$3.50",
+    price: "₹000",
   },
   {
     id: 12,
@@ -104,6 +104,6 @@ export const products = [
     name: "Unsalted Butter",
     category: "Butter",
     brand: "Mother Dairy",
-    price: "$3.80",
+    price: "₹000",
   },
 ];
