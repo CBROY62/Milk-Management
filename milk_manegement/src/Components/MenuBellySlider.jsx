@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import { products } from "../data/menuData"; // Ensure correct data path
+import { products } from "../data/menuData";
 import "../StyleSection/MenuFilter.css";
 
 const MenuFilter = () => {
   const categories = ["All", ...new Set(products.map((p) => p.category))];
-
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [activeCategory, setActiveCategory] = useState("All");
 
   const handleFilter = (category) => {
     setActiveCategory(category);
-    if (category === "All") {
-      setFilteredProducts(products);
-    } else {
-      setFilteredProducts(products.filter((p) => p.category === category));
-    }
+    setFilteredProducts(
+      category === "All"
+        ? products
+        : products.filter((p) => p.category === category)
+    );
   };
 
   return (
@@ -34,14 +33,34 @@ const MenuFilter = () => {
         ))}
       </div>
 
-      {/* Product Cards */}
+      {/* Product Grid */}
       <div className="product-grid">
         {filteredProducts.map((product) => (
           <div className="product-card" key={product.id}>
-            <img src={product.img} alt={product.name} />
-            <h3>{product.name}</h3>
-            <p className="brand">{product.brand}</p>
-            <p className="price">{product.price}</p>
+            {/* Top Labels */}
+            <div className="card-labels">
+              {product.tag && <span className="tag">{product.tag}</span>}
+              {product.discount && (
+                <span className="discount">{product.discount}% Off</span>
+              )}
+            </div>
+
+            {/* Product Image */}
+            <img src={product.img} alt={product.name} className="product-img" />
+
+            {/* Details */}
+            <h3 className="product-name">{product.name}</h3>
+            <p className="product-size">{product.size}</p>
+            <p className="in-stock">In Stock</p>
+
+            {/* Price Section */}
+            <div className="price-section">
+              <span className="new-price">₹{product.price}</span>
+              <span className="old-price">₹{product.oldPrice}</span>
+            </div>
+
+            {/* Add Button */}
+            <button className="add-btn">Add</button>
           </div>
         ))}
       </div>
